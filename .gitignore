@@ -1,2 +1,4 @@
 .vscode
-.jar
+*.class
+*.jar
+bin
