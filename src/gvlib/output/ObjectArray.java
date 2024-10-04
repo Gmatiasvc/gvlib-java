@@ -1,7 +1,7 @@
 package gvlib.output;
 /*
  * GVlib output module
- DOC: This module has various methods to ease the printing to the console
+ DOC: This module has various methods to ease the printing general arrays to the console
  ? developer: Gerardo V.
  */
 public class ObjectArray {
