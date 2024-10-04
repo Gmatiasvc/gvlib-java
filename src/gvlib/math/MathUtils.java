@@ -226,14 +226,24 @@ public class MathUtils {
     }
 
     public static double simpleInterest(float m, float p, int c){
-        if (c < 2){
+        if (c < 1){
             return -1;
         }
         double result=m;
         for (int i = 1; i <= c; i++) {
             result += m*p;
         }
-
         return result;
     } 
+
+    public static double compoundInterest(float m, float p, int c){
+        if (c < 1){
+            return -1;
+        }
+        double result=m;
+        for (int i = 1; i <= c; i++) {
+            result += result*p;
+        }
+        return result;
+    }
 }
