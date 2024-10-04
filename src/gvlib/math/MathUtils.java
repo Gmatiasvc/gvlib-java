@@ -225,4 +225,15 @@ public class MathUtils {
         return sum;
     }
 
+    public static double simpleInterest(float m, float p, int c){
+        if (c < 2){
+            return -1;
+        }
+        double result=m;
+        for (int i = 1; i <= c; i++) {
+            result += m*p;
+        }
+
+        return result;
+    } 
 }
